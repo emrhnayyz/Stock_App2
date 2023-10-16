@@ -73,6 +73,8 @@ const useStockCall = () => {
   // };
 
   //! Instead of writing the common values such as base_url and token each time, we define them there by using axios instance. And then we just need to write the end point that we want to request.
+  //?Axios Instance
+
 
   const BASE_URL = process.env.REACT_APP_BASE_URL;
   const getStockData = async (url) => {
