@@ -30,28 +30,13 @@ const Products = () => {
   };
   const [info, setInfo] = useState({
     name: "",
-    category_id: "",
+    category_id : "",
     brand_id: "",
     
   });
 
-  //? firms verileri bana birden fazla yerde lazım olduğu için fonksiyonu burada değil de her yerden erişebileceğim bir noktada tanımlıyorum. İçerisinde react hookları lazım olduğu için de bu ortak nokta en iyi custom hook olmuş oluyor.
-  // const getFirms = async () => {
-  //   const BASE_URL = process.env.REACT_APP_BASE_URL;
 
-  //   dispatch(fetchStart());
-  //   try {
-  //     const { data } = await axios.get(`${BASE_URL}stock/firms/`, {
-  //       headers: { Authorization: `Token ${token}` },
-  //     });
-  //     console.log(data);
-  //     const url = "firms";
-  //     dispatch(getSucces({ data, url }));
-  //     // dispatch(getSucces({ data, url:"firms"}))
-  //   } catch (error) {
-  //     dispatch(fetchFail());
-  //   }
-  // };
+
 
   useEffect(() => {
     // getFirms();
